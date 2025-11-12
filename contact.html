@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container1 {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .contact-info,
+        .contact-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info h3,
+        .contact-form h3 {
+            margin-bottom: 20px;
+            color: #495057;
+        }
+
+        .contact-info p,
+        .contact-info ul,
+        .contact-form form {
+            color: #6c757d;
+        }
+
+        .contact-info ul {
+            padding-left: 20px;
+        }
+
+        .contact-info ul li {
+            list-style: disc;
+        }
+
+        .contact-form form .btn-primary {
+            background-color: #d69f30;
+            border-color: #d69f30;
+        }
+
+        .contact-form form .btn-primary:hover {
+            background-color: #c98f2a;
+            border-color: #c98f2a;
+        }
+
+        .social-icons a {
+            color: #495057;
+            margin-right: 15px;
+            font-size: 25px;
+        }
+
+        .social-icons a:hover {
+            color: #d69f30;
+        }
+
+        .faq p {
+            margin-bottom: 0;
+        }
+
+        .faq p strong {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Flavor Junction - Contact Page</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="slogan">
+            <p>Welcome to Flavor Junction a Best Quality Restaurant</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body shadow-lg sticky-top">
+        <div class="container-fluid">
+            <div class="logoContainer" style=" left: 140px;">
+                <a class="navbar-brand" href="home.html"><img src="images/Favicon.png" alt="logo"></a>
+                <a href="home.html"
+                    style="font-size: larger; text-decoration: none; color: rgb(218, 157, 35); font-weight: 600;">Flavor
+                    Junction</a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-start " id="navbarNavDropdown"
+                style="font-family: 'Ubuntu', sans-serif; font-weight: 500; font-size: 17px;">
+                <ul class="navbar-nav d-flex justify-content-evenly" style="width: 800px; left: 160px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"
+                            style="color: rgb(69, 69, 69);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: rgb(69, 69, 69);">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(69, 69, 69);">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="shop.html">All Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#appetizers">Appetizers</a></li>
+                            <li><a class="dropdown-item" href="shop.html#salads">Salads</a></li>
+                            <li><a class="dropdown-item" href="shop.html#soups">Soups</a></li>
+                            <li><a class="dropdown-item" href="shop.html#main-courses">Main Courses</a></li>
+                            <li><a class="dropdown-item" href="shop.html#sides">Sides</a></li>
+                            <li><a class="dropdown-item" href="shop.html#desserts">Desserts</a></li>
+                            <li><a class="dropdown-item" href="shop.html#beverages">Beverages</a></li>
+                            <li><a class="dropdown-item" href="shop.html#special-items">Special Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#kids-menu">Kids' Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: rgb(218, 157, 35);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="CartLink">
+                <a href="mycart.php" class="mycart"><button>My Cart</button></a>
+            </div>
+            <div class="bookLink">
+                <a href="bookTable.html" class="bookTable"><button>Book a Table</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container1 mt-5">
+        <h1 style="color: rgb(218, 157, 35);">Contact Us</h1>
+        <div class="row mt-4">
+            <div class="col-md-6 contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Phone:</strong> <a href="tel:123-456-7890">123-456-7890</a></p>
+                <p><strong>Email:</strong> <a href="mailto:flavorjunction5@gmail.com">flavorjunction5@gmail.com</a></p>
+                <p><strong>Address:</strong> 123 Lorem Street, Ipsum, CA-12345<a href="https://www.google.com/maps">[Map
+                        Link]</a></p>
+                <p><strong>Hours:</strong></p>
+                <ul>
+                    <li>Monday to Friday: 10:00 AM - 10:00 PM</li>
+                    <li>Saturday to Sunday: 09:00 AM - 11:00 AM</li>
+                </ul>
+            </div>
+            <div class="col-md-6 contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="contactdata.php" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="name" 
+            name="contactName" 
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            name="contactEmail" 
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input 
+            type="number" 
+            class="form-control" 
+            id="phone" 
+            name="contactNumber">
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea 
+            class="form-control" 
+            id="message" 
+            rows="4" 
+            name="contactMessage" 
+            required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" name="contactSave">Send Message</button>
+</form>
+                
+            </div>
+        </div>
+        <div class="mt-5">
+            <h3 style="color: rgb(218, 157, 35);">Connect With Us</h3>
+            <p>Follow us on social media for updates, promotions, and events:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank" title="Flavor Junction on Facebook"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" title="Flavor Junction on Twitter"><i
+                        class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" title="Flavor Junction on Instagram"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/" target="_blank" title="Flavor Junction on Linkedin"><i
+                        class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="mt-5 faq">
+            <h3 style="color: rgb(218, 157, 35);">FAQ</h3>
+            <p><strong>Q: Do you offer vegan options?</strong>A: Yes, we have a variety of vegan dishes on our menu.</p>
+            <p><strong>Q: Is there parking available?</strong>A: Yes, we have a parking lot adjacent to the restaurant.
+            </p>
+        </div>
+        <div class="mt-5">
+            <h3 style="color: rgb(218, 157, 35);">Special Notices</h3>
+            <p><strong>Summer Special:</strong> Enjoy our summer menu with 20% off all items.</p>
+        </div>
+        <div class="mt-5">
+            <h3 style="color: rgb(218, 157, 35);">Accessibility Information</h3>
+            <p>We have wheelchair accessible entrance and restrooms.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-light pt-4 mt-5" style="background-color: rgb(69, 69, 69);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>Flavor Junction is dedicated to providing an unforgettable dining experience with a variety of
+                        exquisite cuisines, prepared with the finest ingredients.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Address:</strong>123 Lorem Street, Ipsum, CA-12345</li>
+                        <li><strong>Phone:</strong>+91 123-456-7890</li>
+                        <li><strong>Email:</strong>flavorjunction5@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="shop.html" class="text-light">Shop</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                        <li><a href="bookTable.html" class="text-light">Book a Table</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Facebook"><i class="fa fa-facebook-f"
+                                style="font-size:25px"></i></a>
+                        <a href="https://twitter.com" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Twitter"><i class="fa fa-twitter" style="font-size:25px"></i></a>
+                        <a href="https://www.instagram.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Instagram"><i class="fa fa-instagram"
+                                style="font-size:25px"></i></a>
+                        <a href="https://in.linkedin.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Linkedin"><i class="fa fa-linkedin"
+                                style="font-size:25px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center pb-3">
+                <p>&copy; 2024 Flavor Junction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

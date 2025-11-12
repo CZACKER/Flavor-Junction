@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .card-text {
+            color: rgb(218, 157, 35);
+        }
+    </style>
+    <title>Flavor Junction - Home Page</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="slogan">
+            <p>Welcome to Flavor Junction a Best Quality Restaurant</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body shadow-lg sticky-top">
+        <div class="container-fluid">
+            <div class="logoContainer" style=" left: 140px;">
+                <a class="navbar-brand" href="home.html"><img src="images/Favicon.png" alt="logo"></a>
+                <a href="home.html"
+                    style="font-size: larger; text-decoration: none; color: rgb(218, 157, 35); font-weight: 600;">Flavor
+                    Junction</a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-start " id="navbarNavDropdown"
+                style="font-family: 'Ubuntu', sans-serif; font-weight: 500; font-size: 17px;">
+                <ul class="navbar-nav d-flex justify-content-evenly" style="width: 800px; left: 160px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" style="color: rgb(218, 157, 35);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: rgb(69, 69, 69);">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(69, 69, 69);">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="shop.html">All Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#appetizers">Appetizers</a></li>
+                            <li><a class="dropdown-item" href="shop.html#salads">Salads</a></li>
+                            <li><a class="dropdown-item" href="shop.html#soups">Soups</a></li>
+                            <li><a class="dropdown-item" href="shop.html#main-courses">Main Courses</a></li>
+                            <li><a class="dropdown-item" href="shop.html#sides">Sides</a></li>
+                            <li><a class="dropdown-item" href="shop.html#desserts">Desserts</a></li>
+                            <li><a class="dropdown-item" href="shop.html#beverages">Beverages</a></li>
+                            <li><a class="dropdown-item" href="shop.html#special-items">Special Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#kids-menu">Kids' Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: rgb(69, 69, 69);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="CartLink">
+                <a href="mycart.php" class="mycart"><button>My Cart</button></a>
+            </div>
+            <div class="bookLink">
+                <a href="bookTable.html" class="bookTable"><button>Book a Table</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- IMG SLIDE SECTION -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+        style="height: 591px; border-bottom: 1px dotted grey;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="height: 590px; object-fit: cover;" src="images/Ribeye-Steak-.webp" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ribeye Steak</h5>
+                    <p>A classic and hearty option that appeals to meat lovers and adds a touch of sophistication.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 590px; object-fit: cover;" src="images/vietnamese-spring-rolls.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Spring Rolls</h5>
+                    <p>Crispy rolls filled with vegetables or meat.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 590px; object-fit: cover;" src="images/Sushi-Platter.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sushi Platter</h5>
+                    <p>This option highlights the freshness and variety of your seafood offerings.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 590px; object-fit: cover;" src="images/Falafel-Wrap.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Falafel Wrap</h5>
+                    <p>A vegetarian favorite that demonstrates your commitment to offering plant-based options.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 590px;" src="images/Chocolate-Lava-Cake.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chocolate Lava Cake</h5>
+                    <p>Featuring a decadent dessert can attract those with a sweet tooth and leave a lasting impression.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 590px; object-fit: cover;" src="images/Speciality-Cocktails.webp"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Specialty Cocktails</h5>
+                    <p>Showcasing your unique and creative beverages can entice guests looking for a complete dining
+                        experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br>
+    <!-- WelCome Message Card -->
+    <div class="welcomeMessage">
+        <h3>Welcome to Flavor Junction</h3>
+        <p>Discover a world of flavors at Flavor Junction, where culinary excellence meets delightful ambiance. Indulge
+            in our
+            diverse menu, crafted with the freshest ingredients and a passion for perfection. If you're here for a
+            casual meal,
+            a special occasion, or just to enjoy our chef's specials, we promise a dining experience like no other.</p>
+        <p>Taste the Difference. Experience the Flavor.</p>
+    </div>
+
+    <br>
+
+    <!-- Text Slide -->
+    <div class="textSlide" style="width: 80%; margin: 0 auto;">
+        <h3
+            style="margin-bottom: 0; border-bottom: 1px dotted grey; height: 50px; text-align: center; padding-top: 5px; background-color: rgb(255, 238, 207); font-weight: bolder;">
+            Why Choose Us?
+        </h3>
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide m-auto" data-bs-ride="carousel"
+            style="height: 200px; background-color: rgb(255, 245, 227); display: flex; flex-direction: column; align-items: center;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner" style="height: 200px; 
+            width: 70%;">
+                <div class="carousel-item active" style="margin-top: 20px; text-align: center;">
+                    <h4>Farm-to-Table Ingredients</h4>
+                    <br>
+                    <p>We source the freshest ingredients directly from local farms to ensure every dish is bursting
+                        with
+                        flavor and nutrition.</p>
+                </div>
+                <div class="carousel-item" style="margin-top: 20px;  text-align: center;">
+                    <h4>Award-Winning Chefs</h4>
+                    <br>
+                    <p>Our culinary team, led by award-winning chefs, brings creativity and expertise to every plate.
+                    </p>
+                </div>
+                <div class="carousel-item" style="margin-top: 20px;  text-align: center;">
+                    <h4>Authentic Cuisine</h4>
+                    <br>
+                    <p>Enjoy a diverse menu featuring authentic dishes from around the world, each crafted with
+                        traditional
+                        techniques and modern flair.</p>
+                </div>
+                <div class="carousel-item" style="margin-top: 20px;  text-align: center;">
+                    <h4>Cozy Ambiance</h4>
+                    <br>
+                    <p>Relax in our warm and inviting atmosphere, perfect for casual dining, special occasions, and
+                        everything in between.</p>
+                </div>
+                <div class="carousel-item" style="margin-top: 20px;  text-align: center;">
+                    <h4>Exceptional Service</h4>
+                    <br>
+                    <p>Our friendly and attentive staff is dedicated to providing you with an unforgettable dining
+                        experience.</p>
+                </div>
+                <div class="carousel-item" style="margin-top: 20px;  text-align: center;">
+                    <h4>Sustainable Practices</h4>
+                    <br>
+                    <p>We are committed to sustainability, using eco-friendly practices and supporting local
+                        communities.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Call Section with Call to Action Buttons -->
+    <section class="call-section">
+        <div class="container text-center py-5">
+            <h1 style="color: rgb(218, 157, 35);">Explore Flavor Junction</h1>
+            <p>Discover a world of flavors at Flavor Junction, where culinary excellence meets delightful ambiance.</p>
+            <div class="call-buttons">
+                <a href="bookTable.html" class="btn btn-primary mx-2">Book a Table</a>
+                <a href="shop.html" class="btn btn-secondary mx-2">Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <div class="featured-dishes container py-5" style="color: rgb(69, 69, 69);">
+        <h2 class="text-center" style="color: rgb(218, 157, 35);">Featured Dishes</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chiken-Tikka-Masala.jpg" class="Dcard-img-top" alt="Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Tikka Masala</h5>
+                        <p class="card-text">Tender pieces of Indian spiced chicken simmered in a creamy tomato sauce
+                            with aromatic flavors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Ribeye-Steak-.webp" class="Dcard-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ribeye Steak with Garlic Butter</h5>
+                        <p class="card-text">Grilled ribeye steak served with rich garlic butter, a savory delight for
+                            steak enthusiasts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chocolate-Lava-cake1.jpg" class="Dcard-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                        <p class="card-text">Warm chocolate cake with a gooey, molten center, perfect for indulgence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-light pt-4 mt-5" style="background-color: rgb(69, 69, 69);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>Flavor Junction is dedicated to providing an unforgettable dining experience with a variety of
+                        exquisite cuisines, prepared with the finest ingredients.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Address:</strong>123 Lorem Street, Ipsum, CA-12345</li>
+                        <li><strong>Phone:</strong>+91 123-456-7890</li>
+                        <li><strong>Email:</strong>flavorjunction5@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="shop.html" class="text-light">Shop</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                        <li><a href="bookTable.html" class="text-light">Book a Table</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Facebook"><i class="fa fa-facebook-f"
+                                style="font-size:25px"></i></a>
+                        <a href="https://twitter.com" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Twitter"><i class="fa fa-twitter" style="font-size:25px"></i></a>
+                        <a href="https://www.instagram.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Instagram"><i class="fa fa-instagram"
+                                style="font-size:25px"></i></a>
+                        <a href="https://in.linkedin.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Linkedin"><i class="fa fa-linkedin"
+                                style="font-size:25px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center pb-3">
+                <p>&copy; 2024 Flavor Junction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

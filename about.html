@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .content-section {
+            padding: 60px 0;
+        }
+
+        .content-section h2 {
+            color: rgb(218, 157, 35);
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            color: #454545;
+            line-height: 1.8;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .team-member h5 {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .team-member p {
+            color: #da9d23;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <title>Flavor Junction - About Us</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="slogan">
+            <p>Welcome to Flavor Junction a Best Quality Restaurant</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body shadow-lg sticky-top">
+        <div class="container-fluid">
+            <div class="logoContainer" style=" left: 140px;">
+                <a class="navbar-brand" href="home.html"><img src="images/Favicon.png" alt="logo"></a>
+                <a href="home.html"
+                    style="font-size: larger; text-decoration: none; color: rgb(218, 157, 35); font-weight: 600;">Flavor
+                    Junction</a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-start " id="navbarNavDropdown"
+                style="font-family: 'Ubuntu', sans-serif; font-weight: 500; font-size: 17px;">
+                <ul class="navbar-nav d-flex justify-content-evenly" style="width: 800px; left: 160px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"
+                            style="color: rgb(69, 69, 69);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgb(218, 157, 35);">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(69, 69, 69);">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="shop.html">All Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#appetizers">Appetizers</a></li>
+                            <li><a class="dropdown-item" href="shop.html#salads">Salads</a></li>
+                            <li><a class="dropdown-item" href="shop.html#soups">Soups</a></li>
+                            <li><a class="dropdown-item" href="shop.html#main-courses">Main Courses</a></li>
+                            <li><a class="dropdown-item" href="shop.html#sides">Sides</a></li>
+                            <li><a class="dropdown-item" href="shop.html#desserts">Desserts</a></li>
+                            <li><a class="dropdown-item" href="shop.html#beverages">Beverages</a></li>
+                            <li><a class="dropdown-item" href="shop.html#special-items">Special Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#kids-menu">Kids' Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: rgb(69, 69, 69);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="CartLink">
+                <a href="mycart.php" class="mycart"><button>My Cart</button></a>
+            </div>
+            <div class="bookLink">
+                <a href="bookTable.html" class="bookTable"><button>Book a Table</button></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- our story -->
+    <section class="content-section" id="our-story">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>At Flavor Junction, our journey began with a shared passion for creating memorable culinary experiences.
+                Founded in 1982, we set out to blend diverse flavors from around the world into unique dishes that
+                reflect both tradition and innovation. Inspired by almost all countries rich culinary heritage, we
+                strive to
+                offer a dining experience that resonates with authenticity and creativity.</p>
+            <p>What started as a dream among friends quickly evolved into a bustling hub for food enthusiasts seeking
+                bold
+                flavors and warm hospitality. From our humble beginnings in Pune, India to becoming a beloved fixture in
+                the community, Flavor Junction has grown into a destination where every meal tells a story of
+                craftsmanship
+                and care.</p>
+            <p>Join us on a gastronomic adventure where every dish celebrates our commitment to quality ingredients,
+                sustainable practices, and a deep-rooted passion for culinary artistry. Welcome to Flavor Junction,
+                where
+                every visit is a journey of taste and tradition.</p>
+        </div>
+    </section>
+
+    <!-- MISSION AND VALUES SECTION -->
+    <section class="content-section bg-light" id="mission-values">
+        <div class="container">
+            <h2>Mission and Values</h2>
+            <p>At Flavor Junction, we are dedicated to providing an unforgettable dining experience through our
+                commitment
+                to quality, sustainability, and community. Our mission is to craft dishes that delight the senses while
+                upholding the highest standards of culinary excellence. We believe in using locally sourced, sustainable
+                ingredients to create meals that are as good for the planet as they are for our guests.</p>
+        </div>
+    </section>
+
+    <!-- TEAM INTRODUCTIONS SECTION -->
+    <section class="content-section" id="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-4 team-member">
+                    <img src="images/Chef.jpg" alt="Head Chef">
+                    <h5>John Doe</h5>
+                    <p>Head Chef</p>
+                    <p>John brings over 20 years of culinary experience to Flavor Junction, crafting exceptional dishes
+                        with creativity and flair.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="images/Restaurant-Owner.jpg" alt="Owner">
+                    <h5>Jane Smith</h5>
+                    <p>Owner</p>
+                    <p>Jane's vision and passion for fine dining are the driving forces behind the success of Flavor
+                        Junction.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="images/Restaurant-Manager.jpg" alt="Manager">
+                    <h5>Mike Brown</h5>
+                    <p>Manager</p>
+                    <p>Mike ensures that every guest enjoys a seamless and delightful dining experience from start to
+                        finish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARDS AND RECOGNITION SECTION -->
+    <section class="content-section bg-light" id="awards">
+        <div class="container">
+            <h2>Awards and Recognition</h2>
+            <p>Over the years, Flavor Junction has been honored with numerous awards and recognitions that celebrate our
+                commitment to culinary excellence. We are proud to have received accolades such as:</p>
+            <ul>
+                <li>Best New Restaurant 2023 - Awarded by Local Culinary Association</li>
+                <li>Excellence in Service 2022 - Recognized by National Restaurant Awards</li>
+                <li>Top 10 Best Restaurants in Pune - Featured in Popular Food Magazine</li>
+                <li>Chef of the Year 2021 - Awarded to John Doe by Culinary Guild</li>
+                <li>Sustainable Restaurant Award 2020 - Given by Environmental Food Organization</li>
+            </ul>
+            <p>We have also been featured in esteemed publications like:</p>
+            <ul>
+                <li>"A Culinary Gem in Pune" - Local Newspaper Name, January 2023</li>
+                <li>"Flavor Junction's Innovative Menu Delights Food Critics" - Gourmet Food Magazine, March 2022</li>
+                <li>"Top 5 Must-Visit Restaurants in Pune" - Travel and Leisure Blog, June 2021</li>
+                <li>"Exceptional Dining Experience at Flavor Junction" - Food Review Website, October 2020</li>
+                <li>"Interview with John Doe: The Vision Behind Flavor Junction" - Culinary Journal, December
+                    2019
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="content-section" id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="row gallery">
+                <div class="col-md-4">
+                    <img src="images/Interior.jpg" alt="Interior">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Exterior.webp" alt="Exterior">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Kitchen.jpg" alt="Kitchen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="text-light pt-4 mt-5" style="background-color: rgb(69, 69, 69);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>Flavor Junction is dedicated to providing an unforgettable dining experience with a variety of
+                        exquisite cuisines, prepared with the finest ingredients.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Address:</strong>123 Lorem Street, Ipsum, CA-12345</li>
+                        <li><strong>Phone:</strong>+91 123-456-7890</li>
+                        <li><strong>Email:</strong>flavorjunction5@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="shop.html" class="text-light">Shop</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                        <li><a href="bookTable.html" class="text-light">Book a Table</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Facebook"><i class="fa fa-facebook-f"
+                                style="font-size:25px"></i></a>
+                        <a href="https://twitter.com" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Twitter"><i class="fa fa-twitter" style="font-size:25px"></i></a>
+                        <a href="https://www.instagram.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Instagram"><i class="fa fa-instagram"
+                                style="font-size:25px"></i></a>
+                        <a href="https://in.linkedin.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Linkedin"><i class="fa fa-linkedin"
+                                style="font-size:25px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center pb-3">
+                <p>&copy; 2024 Flavor Junction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700&display=swap');
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .call-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+
+        .call-section h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .call-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .call-buttons .btn {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+
+        #order-section h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 10px 0px;
+        }
+
+        .card-body h5 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card-body p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .d-flex .btn {
+            flex: 1;
+            margin: 0 5px;
+        }
+    </style>
+    <title>Flavor Junction - Home Page</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="slogan">
+            <p>Welcome to Flavor Junction a Best Quality Restaurant</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body shadow-lg sticky-top">
+        <div class="container-fluid">
+            <div class="logoContainer" style=" left: 140px;">
+                <a class="navbar-brand" href="home.html"><img src="images/Favicon.png" alt="logo"></a>
+                <a href="home.html"
+                    style="font-size: larger; text-decoration: none; color: rgb(218, 157, 35); font-weight: 600;">Flavor
+                    Junction</a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-start " id="navbarNavDropdown"
+                style="font-family: 'Ubuntu', sans-serif; font-weight: 500; font-size: 17px;">
+                <ul class="navbar-nav d-flex justify-content-evenly" style="width: 800px; left: 160px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"
+                            style="color: rgb(69, 69, 69);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: rgb(69, 69, 69);">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(218, 157, 35);">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">All Items</a></li>
+                            <li><a class="dropdown-item" href="#appetizers">Appetizers</a></li>
+                            <li><a class="dropdown-item" href="#salads">Salads</a></li>
+                            <li><a class="dropdown-item" href="#soups">Soups</a></li>
+                            <li><a class="dropdown-item" href="#main-courses">Main Courses</a></li>
+                            <li><a class="dropdown-item" href="#sides">Sides</a></li>
+                            <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+                            <li><a class="dropdown-item" href="#beverages">Beverages</a></li>
+                            <li><a class="dropdown-item" href="#special-items">Special Items</a></li>
+                            <li><a class="dropdown-item" href="#kids-menu">Kids' Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: rgb(69, 69, 69);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="CartLink">
+                <a href="mycart.php" class="mycart"><button>My Cart</button></a>
+            </div>
+            <div class="bookLink">
+                <a href="bookTable.html" class="bookTable"><button>Book a Table</button></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CALL TO ACTION SECTION -->
+    <section class="call-section text-center">
+        <h1 style="color: rgb(218, 157, 35);">Welcome to Flavor Junction Online Shopee</h1>
+        <p>Your culinary adventure starts here. Enjoy the finest dishes crafted with love and passion.</p>
+        <div class="call-buttons">
+            <a href="mycart.php" class="btn btn-primary">My Cart</a>
+            <a href="bookTable.html" class="btn btn-secondary">Book a Table</a>
+        </div>
+    </section>
+
+    <!-- ONLINE ORDER PLATFORM -->
+    <section id="order-section" class="container mt-5">
+        <h2 class="text-center mb-4" style="color: rgb(218, 157, 35);">Order Online</h2>
+        <div class="row">
+            <!-- Appetizers -->
+            <div class="col-12" id="appetizers">
+                <h3>Appetizers</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Spring-Rolls.jpg" class="card-img-top Dcard-img-top" alt="Spring Rolls">
+                    <div class="card-body">
+                        <h5 class="card-title">Spring Rolls</h5>
+                        <p class="card-text">Crispy rolls filled with vegetables or meat.</p>
+                        <p class="card-text"><strong>Price:</strong> 450</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Spring Rolls">
+                                <input type="hidden" name="itemPrice" value="450">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/bruschetta.jpg" class="card-img-top Dcard-img-top" alt="Bruschetta">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruschetta</h5>
+                        <p class="card-text">Toasted bread topped with basil, and mozzarella.</p>
+                        <p class="card-text"><strong>Price:</strong> 500</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Bruschetta">
+                                <input type="hidden" name="itemPrice" value="500">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Hummus-Platter.jpg" class="card-img-top Dcard-img-top" alt="Hummus Platter">
+                    <div class="card-body">
+                        <h5 class="card-title">Hummus Platter</h5>
+                        <p class="card-text">Served with pita bread, olives, and vegetables.</p>
+                        <p class="card-text"><strong>Price:</strong> 600</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Hummus Platter">
+                                <input type="hidden" name="itemPrice" value="600">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Stuffed-Mushrooms.webp" class="card-img-top Dcard-img-top" alt="Stuffed Mushrooms">
+                    <div class="card-body">
+                        <h5 class="card-title">Stuffed Mushrooms</h5>
+                        <p class="card-text">Mushrooms filled with cheese and herbs.</p>
+                        <p class="card-text"><strong>Price:</strong> 550</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Stuffed Mushrooms">
+                                <input type="hidden" name="itemPrice" value="550">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Gyoza.jpg" class="card-img-top Dcard-img-top" alt="Gyoza">
+                    <div class="card-body">
+                        <h5 class="card-title">Gyoza</h5>
+                        <p class="card-text">Japanese dumplings with pork or vegetable filling.</p>
+                        <p class="card-text"><strong>Price:</strong> 650</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Gyoza">
+                                <input type="hidden" name="itemPrice" value="650">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salads -->
+            <div class="col-12" id="salads">
+                <h3>Salads</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/greek_salad.jpg" class="card-img-top Dcard-img-top" alt="Greek Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Greek Salad</h5>
+                        <p class="card-text">Fresh vegetables with feta cheese and olives.</p>
+                        <p class="card-text"><strong>Price:</strong> 700</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Greek Salad">
+                                <input type="hidden" name="itemPrice" value="700">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/caesar-salad.webp" class="card-img-top Dcard-img-top" alt="Caesar Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Caesar Salad</h5>
+                        <p class="card-text">Romaine lettuce, croutons, and Caesar dressing.</p>
+                        <p class="card-text"><strong>Price:</strong> 650</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Caesar Salad">
+                                <input type="hidden" name="itemPrice" value="650">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Quinoa-Salad.jpg" class="card-img-top Dcard-img-top" alt="Quinoa Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Quinoa Salad</h5>
+                        <p class="card-text">Quinoa with mixed avocado, and citrus dressing.</p>
+                        <p class="card-text"><strong>Price:</strong> 750</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Quinoa Salad">
+                                <input type="hidden" name="itemPrice" value="750">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Blueberry-Caprese.jpg" class="card-img-top Dcard-img-top" alt="Caprese Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Caprese Salad</h5>
+                        <p class="card-text">Tomatoes, and basil with balsamic glaze.</p>
+                        <p class="card-text"><strong>Price:</strong> 600</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Caprese Salad">
+                                <input type="hidden" name="itemPrice" value="600">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Berry-Spinach-Salad.webp" class="card-img-top Dcard-img-top"
+                        alt="Spinach & Berry Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Spinach & Berry Salad</h5>
+                        <p class="card-text">Spinach, mixed berries, and nuts.</p>
+                        <p class="card-text"><strong>Price:</strong> 800</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Spinach & Berry Salad">
+                                <input type="hidden" name="itemPrice" value="800">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soups -->
+            <div class="col-12" id="soups">
+                <h3>Soups</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Tom-Yum-Soup.webp" class="card-img-top Dcard-img-top" alt="Tom Yum Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Tom Yum Soup</h5>
+                        <p class="card-text">Spicy Thai soup with shrimp.</p>
+                        <p class="card-text"><strong>Price:</strong> 550</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Tom Yum Soup">
+                                <input type="hidden" name="itemPrice" value="550">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/minestrone.jpg" class="card-img-top Dcard-img-top" alt="Minestrone">
+                    <div class="card-body">
+                        <h5 class="card-title">Minestrone</h5>
+                        <p class="card-text">Italian vegetable soup with pasta.</p>
+                        <p class="card-text"><strong>Price:</strong> 500</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Minestrone">
+                                <input type="hidden" name="itemPrice" value="500">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chicken-Tortila-soup.jpg" class="card-img-top Dcard-img-top"
+                        alt="Chicken Tortilla Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Tortilla Soup</h5>
+                        <p class="card-text">Mexican soup with chicken and tortilla strips.</p>
+                        <p class="card-text"><strong>Price:</strong> 600</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Chicken Tortilla Soup">
+                                <input type="hidden" name="itemPrice" value="600">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/french-onion-soup.jpg" class="card-img-top Dcard-img-top" alt="French Onion Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">French Onion Soup</h5>
+                        <p class="card-text">Onion soup with a cheesy crouton top.</p>
+                        <p class="card-text"><strong>Price:</strong> 650</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="French Onion Soup">
+                                <input type="hidden" name="itemPrice" value="650">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Miso-Soup.jpg" class="card-img-top Dcard-img-top" alt="Miso Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Miso Soup</h5>
+                        <p class="card-text">Traditional Japanese soup with tofu and seaweed.</p>
+                        <p class="card-text"><strong>Price:</strong> 550</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Miso Soup">
+                                <input type="hidden" name="itemPrice" value="550">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="col-12" id="main-courses">
+                <h3>Main Courses</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/PadThai.webp" class="card-img-top Dcard-img-top" alt="Pad Thai">
+                    <div class="card-body">
+                        <h5 class="card-title">Pad Thai</h5>
+                        <p class="card-text">Stir-fried noodles with shrimp or chicken.</p>
+                        <p class="card-text"><strong>Price:</strong> 750</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Pad Thai">
+                                <input type="hidden" name="itemPrice" value="750">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Margherita-Pizza.jpg" class="card-img-top Dcard-img-top" alt="Margherita Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Margherita Pizza</h5>
+                        <p class="card-text">Classic Italian pizza with tomatoes and mozzarella.</p>
+                        <p class="card-text"><strong>Price:</strong> 850</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Margherita Pizza">
+                                <input type="hidden" name="itemPrice" value="850">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chicken-tikka-masala.jpg" class="card-img-top Dcard-img-top"
+                        alt="Chicken Tikka Masala">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Tikka Masala</h5>
+                        <p class="card-text">Indian spiced chicken in a creamy tomato sauce.</p>
+                        <p class="card-text"><strong>Price:</strong> 900</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Chicken Tikka Masala">
+                                <input type="hidden" name="itemPrice" value="900">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Ribeye-Steak-.webp" class="card-img-top Dcard-img-top" alt="Ribeye Steak">
+                    <div class="card-body">
+                        <h5 class="card-title">Ribeye Steak</h5>
+                        <p class="card-text">Grilled ribeye with garlic butter.</p>
+                        <p class="card-text"><strong>Price:</strong> 1,200</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Ribeye Steak">
+                                <input type="hidden" name="itemPrice" value="1200">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Falafel-Wrap.jpg" class="card-img-top Dcard-img-top" alt="Falafel Wrap">
+                    <div class="card-body">
+                        <h5 class="card-title">Falafel Wrap</h5>
+                        <p class="card-text">Middle Eastern wrap with falafel and vegetables.</p>
+                        <p class="card-text"><strong>Price:</strong> 700</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Falafel Wrap">
+                                <input type="hidden" name="itemPrice" value="700">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Sushi-Platter.jpg" class="card-img-top Dcard-img-top" alt="Sushi Platter">
+                    <div class="card-body">
+                        <h5 class="card-title">Sushi Platter</h5>
+                        <p class="card-text">Assorted sushi rolls and sashimi.</p>
+                        <p class="card-text"><strong>Price:</strong> 1,300</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Sushi Platter">
+                                <input type="hidden" name="itemPrice" value="1300">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Lamb-tagine.webp" class="card-img-top Dcard-img-top" alt="Lamb Tagine">
+                    <div class="card-body">
+                        <h5 class="card-title">Lamb Tagine</h5>
+                        <p class="card-text">Moroccan lamb stew with apricots and almonds.</p>
+                        <p class="card-text"><strong>Price:</strong> 1,100</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Lamb Tagine">
+                                <input type="hidden" name="itemPrice" value="1100">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Beef-Tacos.jpg" class="card-img-top Dcard-img-top" alt="Beef Tacos">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Tacos</h5>
+                        <p class="card-text">Soft tacos with seasoned beef and salsa.</p>
+                        <p class="card-text"><strong>Price:</strong> 800</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Beef Tacos">
+                                <input type="hidden" name="itemPrice" value="800">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div class="col-12" id="sides">
+                <h3>Sides</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Garlic-Bread.jpg" class="card-img-top Dcard-img-top" alt="Garlic Bread">
+                    <div class="card-body">
+                        <h5 class="card-title">Garlic Bread</h5>
+                        <p class="card-text">Toasted bread with garlic and herbs.</p>
+                        <p class="card-text"><strong>Price:</strong> 200</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Garlic Bread">
+                                <input type="hidden" name="itemPrice" value="200">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/french-fries.jpg" class="card-img-top Dcard-img-top" alt="French Fries">
+                    <div class="card-body">
+                        <h5 class="card-title">French Fries</h5>
+                        <p class="card-text">Crispy potato fries with dipping sauces.</p>
+                        <p class="card-text"><strong>Price:</strong> 150</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="French Fries">
+                                <input type="hidden" name="itemPrice" value="150">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Steamed-vegetables.jpg" class="card-img-top Dcard-img-top"
+                        alt="Steamed Vegetables">
+                    <div class="card-body">
+                        <h5 class="card-title">Steamed Vegetables</h5>
+                        <p class="card-text">Seasonal vegetables lightly steamed.</p>
+                        <p class="card-text"><strong>Price:</strong> 180</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Steamed Vegetables">
+                                <input type="hidden" name="itemPrice" value="180">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/rice-pilaf.jpg" class="card-img-top Dcard-img-top" alt="Rice Pilaf">
+                    <div class="card-body">
+                        <h5 class="card-title">Rice Pilaf</h5>
+                        <p class="card-text">Flavored rice with spices and vegetables.</p>
+                        <p class="card-text"><strong>Price:</strong> 160</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Rice Pilaf">
+                                <input type="hidden" name="itemPrice" value="160">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Mashed-Potatoes.jpg" class="card-img-top Dcard-img-top" alt="Mashed Potatoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Mashed Potatoes</h5>
+                        <p class="card-text">Creamy mashed potatoes with gravy.</p>
+                        <p class="card-text"><strong>Price:</strong> 170</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Mashed Potatoes">
+                                <input type="hidden" name="itemPrice" value="170">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="col-12" id="desserts">
+                <h3>Desserts</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chocolate-cake.jpg" class="card-img-top Dcard-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Cake</h5>
+                        <p class="card-text">Rich chocolate cake with layers of chocolate.</p>
+                        <p class="card-text"><strong>Price:</strong> 250</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Chocolate Cake">
+                                <input type="hidden" name="itemPrice" value="250">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/cheesecake.jpg" class="card-img-top Dcard-img-top" alt="Cheesecake">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesecake</h5>
+                        <p class="card-text">Creamy cheesecake with a graham cracker crust.</p>
+                        <p class="card-text"><strong>Price:</strong> 220</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Cheesecake">
+                                <input type="hidden" name="itemPrice" value="220">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Creme-brulee.jpg" class="card-img-top Dcard-img-top" alt="Crème Brûlée">
+                    <div class="card-body">
+                        <h5 class="card-title">Crème Brûlée</h5>
+                        <p class="card-text">Classic custard dessert with caramelized sugar.</p>
+                        <p class="card-text"><strong>Price:</strong> 240</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Crème Brûlée">
+                                <input type="hidden" name="itemPrice" value="240">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Apple-Pie.jpg" class="card-img-top Dcard-img-top" alt="Apple Pie">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple Pie</h5>
+                        <p class="card-text">Traditional apple pie with a flaky crust.</p>
+                        <p class="card-text"><strong>Price:</strong> 230</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Apple Pie">
+                                <input type="hidden" name="itemPrice" value="230">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Tiramisu.avif" class="card-img-top Dcard-img-top" alt="Tiramisu">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiramisu</h5>
+                        <p class="card-text">Coffee-soaked ladyfingers, mascarpone layers.</p>
+                        <p class="card-text"><strong>Price:</strong> 260</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Tiramisu">
+                                <input type="hidden" name="itemPrice" value="260">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Ice-cream-sundaes.jpg" class="card-img-top Dcard-img-top" alt="Ice Cream Sundae">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream Sundae</h5>
+                        <p class="card-text">Vanilla ice cream topped with chocolate sauce.</p>
+                        <p class="card-text"><strong>Price:</strong> 200</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Ice Cream Sundae">
+                                <input type="hidden" name="itemPrice" value="200">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="col-12 mt-5" id="beverages">
+                <h3>Beverages</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Speciality-Cocktails.webp" class="card-img-top Dcard-img-top"
+                        alt="Specialty Cocktails">
+                    <div class="card-body">
+                        <h5 class="card-title">Specialty Cocktails</h5>
+                        <p class="card-text">Unique cocktails inspired by different regions.</p>
+                        <p class="card-text"><strong>Price:</strong> 350</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Specialty Cocktails">
+                                <input type="hidden" name="itemPrice" value="350">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/smoothie.jpg" class="card-img-top Dcard-img-top" alt="Smoothies">
+                    <div class="card-body">
+                        <h5 class="card-title">Smoothies</h5>
+                        <p class="card-text">Fresh fruit smoothies with a variety of flavors.</p>
+                        <p class="card-text"><strong>Price:</strong> 180</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Smoothies">
+                                <input type="hidden" name="itemPrice" value="180">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/iced-tea.jpg" class="card-img-top Dcard-img-top" alt="Iced Teas">
+                    <div class="card-body">
+                        <h5 class="card-title">Iced Teas</h5>
+                        <p class="card-text">Flavored iced teas such as lemon, or green tea.</p>
+                        <p class="card-text"><strong>Price:</strong> 150</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Iced Teas">
+                                <input type="hidden" name="itemPrice" value="150">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Craft-Beer.jpg" class="card-img-top Dcard-img-top" alt="Craft Beers">
+                    <div class="card-body">
+                        <h5 class="card-title">Craft Beers</h5>
+                        <p class="card-text">Selection of local and international craft beers.</p>
+                        <p class="card-text"><strong>Price:</strong> 250</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Craft Beers">
+                                <input type="hidden" name="itemPrice" value="250">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Wine-List.jpg" class="card-img-top Dcard-img-top" alt="Wine List">
+                    <div class="card-body">
+                        <h5 class="card-title">Wine List</h5>
+                        <p class="card-text">A curated list of wines from around the world.</p>
+                        <p class="card-text"><strong>Price:</strong> 300</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Wine List">
+                                <input type="hidden" name="itemPrice" value="300">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Mocktails.webp" class="card-img-top Dcard-img-top" alt="Mocktails">
+                    <div class="card-body">
+                        <h5 class="card-title">Mocktails</h5>
+                        <p class="card-text">Non-alcoholic cocktails with creative flavors.</p>
+                        <p class="card-text"><strong>Price:</strong> 120</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Mocktails">
+                                <input type="hidden" name="itemPrice" value="120">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Special Items -->
+            <div class="col-12 mt-5" id="special-items">
+                <h3>Special Items</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chefs-special.webp" class="card-img-top Dcard-img-top" alt="Chefs Specials">
+                    <div class="card-body">
+                        <h5 class="card-title">Chefs Specials</h5>
+                        <p class="card-text">Daily or weekly specials created by the chef.</p>
+                        <p class="card-text"><strong>Price:</strong> 380</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Chefs Specials">
+                                <input type="hidden" name="itemPrice" value="380">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/seasonal-dishes.jpg" class="card-img-top Dcard-img-top" alt="Seasonal Dishes">
+                    <div class="card-body">
+                        <h5 class="card-title">Seasonal Dishes</h5>
+                        <p class="card-text">Items that feature seasonal ingredients.</p>
+                        <p class="card-text"><strong>Price:</strong> 300</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Seasonal Dishes">
+                                <input type="hidden" name="itemPrice" value="300">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/tasting-menu.png" class="card-img-top Dcard-img-top" alt="Tasting Menu">
+                    <div class="card-body">
+                        <h5 class="card-title">Tasting Menu</h5>
+                        <p class="card-text">A multi-course meal showcasing the best dishes.</p>
+                        <p class="card-text"><strong>Price:</strong> 450</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Tasting Menu">
+                                <input type="hidden" name="itemPrice" value="450">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/vegan-menu.jpg" class="card-img-top Dcard-img-top" alt="Vegetarian/Vegan Options">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetarian/Vegan Options</h5>
+                        <p class="card-text">A variety of plant-based dishes.</p>
+                        <p class="card-text"><strong>Price:</strong> 320</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Vegetarian/Vegan Options">
+                                <input type="hidden" name="itemPrice" value="320">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Glutten-free.jpg" class="card-img-top Dcard-img-top" alt="Gluten-Free Options">
+                    <div class="card-body">
+                        <h5 class="card-title">Gluten-Free Options</h5>
+                        <p class="card-text">Dishes that cater to gluten-free dietary needs.</p>
+                        <p class="card-text"><strong>Price:</strong> 280</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Gluten-Free Options">
+                                <input type="hidden" name="itemPrice" value="280">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Kids' Menu -->
+            <div class="col-12 mt-5" id="kids-menu">
+                <h3>Kids' Menu</h3>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/mini-burgers.jpeg" class="card-img-top Dcard-img-top" alt="Mini Burgers">
+                    <div class="card-body">
+                        <h5 class="card-title">Mini Burgers</h5>
+                        <p class="card-text">Small burgers with cheese and fries.</p>
+                        <p class="card-text"><strong>Price:</strong> 250</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Mini Burgers">
+                                <input type="hidden" name="itemPrice" value="250">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Macaroni-And-Cheese.jpg" class="card-img-top Dcard-img-top" alt="Mac and Cheese">
+                    <div class="card-body">
+                        <h5 class="card-title">Mac and Cheese</h5>
+                        <p class="card-text">Classic macaroni and cheese.</p>
+                        <p class="card-text"><strong>Price:</strong> 220</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Mac and Cheese">
+                                <input type="hidden" name="itemPrice" value="220">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chicken-Nuggets.jpg" class="card-img-top Dcard-img-top" alt="Chicken Nuggets">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Nuggets</h5>
+                        <p class="card-text">Breaded and fried chicken pieces.</p>
+                        <p class="card-text"><strong>Price:</strong> 200</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Chicken Nuggets">
+                                <input type="hidden" name="itemPrice" value="200">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Pizza-Bites.jpg" class="card-img-top Dcard-img-top" alt="Pizza Bites">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Bites</h5>
+                        <p class="card-text">Small pieces of pizza with kid-friendly toppings.</p>
+                        <p class="card-text"><strong>Price:</strong> 230</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Pizza Bites">
+                                <input type="hidden" name="itemPrice" value="230">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Fruit-Cups.jpg" class="card-img-top Dcard-img-top" alt="Fruit Cups">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruit Cups</h5>
+                        <p class="card-text">Fresh fruit cups for a healthy option.</p>
+                        <p class="card-text"><strong>Price:</strong> 180</p>
+                        <div class="d-flex justify-content-between">
+                            <form action="add_to_cart.php" method="post">
+                                <input type="hidden" name="itemName" value="Fruit Cups">
+                                <input type="hidden" name="itemPrice" value="180">
+                                <button type="submit" class="btn btn-primary" name="itemSave">Add to Cart</button>
+                            </form>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-light pt-4 mt-5" style="background-color: rgb(69, 69, 69);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>Flavor Junction is dedicated to providing an unforgettable dining experience with a variety of
+                        exquisite cuisines, prepared with the finest ingredients.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Address:</strong>123 Lorem Street, Ipsum, CA-12345</li>
+                        <li><strong>Phone:</strong>+91 123-456-7890</li>
+                        <li><strong>Email:</strong>flavorjunction5@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="shop.html" class="text-light">Shop</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                        <li><a href="bookTable.html" class="text-light">Book a Table</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Facebook"><i class="fa fa-facebook-f"
+                                style="font-size:25px"></i></a>
+                        <a href="https://twitter.com" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Twitter"><i class="fa fa-twitter" style="font-size:25px"></i></a>
+                        <a href="https://www.instagram.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Instagram"><i class="fa fa-instagram"
+                                style="font-size:25px"></i></a>
+                        <a href="https://in.linkedin.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Linkedin"><i class="fa fa-linkedin"
+                                style="font-size:25px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center pb-3">
+                <p>&copy; 2024 Flavor Junction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Success</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Item added to cart successfully!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showCartModal() {
+        var cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+        cartModal.show();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem('cartAdded') === 'true') {
+            showCartModal();
+            localStorage.removeItem('cartAdded');
+        }
+    });
+</script>
+
+</body>
+
+</html>

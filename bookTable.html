@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .booking-container {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .booking-options {
+            margin-top: 20px;
+        }
+
+        .booking-options .form-check {
+            margin-bottom: 10px;
+        }
+
+        .booking-form button {
+            margin-top: 20px;
+            border: none;
+        }
+    </style>
+    <title>Flavor Junction - Home Page</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="slogan">
+            <p>Welcome to Flavor Junction a Best Quality Restaurant</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body shadow-lg sticky-top">
+        <div class="container-fluid">
+            <div class="logoContainer" style=" left: 140px;">
+                <a class="navbar-brand" href="home.html"><img src="images/Favicon.png" alt="logo"></a>
+                <a href="home.html"
+                    style="font-size: larger; text-decoration: none; color: rgb(218, 157, 35); font-weight: 600;">Flavor
+                    Junction</a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-start " id="navbarNavDropdown"
+                style="font-family: 'Ubuntu', sans-serif; font-weight: 500; font-size: 17px;">
+                <ul class="navbar-nav d-flex justify-content-evenly" style="width: 800px; left: 160px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"
+                            style="color: rgb(69, 69, 69);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: rgb(69, 69, 69);">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(69, 69, 69);">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="shop.html">All Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#appetizers">Appetizers</a></li>
+                            <li><a class="dropdown-item" href="shop.html#salads">Salads</a></li>
+                            <li><a class="dropdown-item" href="shop.html#soups">Soups</a></li>
+                            <li><a class="dropdown-item" href="shop.html#main-courses">Main Courses</a></li>
+                            <li><a class="dropdown-item" href="shop.html#sides">Sides</a></li>
+                            <li><a class="dropdown-item" href="shop.html#desserts">Desserts</a></li>
+                            <li><a class="dropdown-item" href="shop.html#beverages">Beverages</a></li>
+                            <li><a class="dropdown-item" href="shop.html#special-items">Special Items</a></li>
+                            <li><a class="dropdown-item" href="shop.html#kids-menu">Kids' Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: rgb(69, 69, 69);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="CartLink">
+                <a href="mycart.php" class="mycart"><button>My Cart</button></a>
+            </div>
+            <div class="bookLink">
+                <a href="#" class="bookTable"><button>Book a Table</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BOOKING SECTION -->
+    <div class="container booking-container">
+        <h2 class="text-center">Book a Table</h2>
+        <form action="bookTableDataInsert.php" method="post" class="booking-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" name="bookingName" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="bookingEmail" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="bookingNumber" id="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" name="bookingDate" id="date" required>
+            </div>
+            <div class="mb-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" class="form-control" name="bookingTime" id="time" required>
+            </div>
+            <div class="mb-3">
+                <label for="guests" class="form-label">Number of Guests</label>
+                <input type="number" class="form-control" name="bookingGuests" id="guests" min="1" max="20" required>
+            </div>
+            <div class="mb-3 booking-options">
+                <label class="form-label">Seating Preference</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="seating" id="inside" value="inside" required>
+                    <label class="form-check-label" for="inside">
+                        Family Room Table
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="seating" id="outside" value="outside" required>
+                    <label class="form-check-label" for="outside">
+                        Outside Ground Table
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="seating" id="musician" value="musician" required>
+                    <label class="form-check-label" for="musician">
+                        Near Musician Table
+                    </label>
+                </div>
+            </div>
+            <button type="submit" name="bookingSave" class="btn btn-primary"
+                style="background-color: rgb(218, 157, 35);">Submit</button>
+        </form>
+
+        <a href="bookedTableData.php"><button class="btn btn-primary"
+                style="background-color: rgb(218, 157, 35); border: none; position: relative; left: 500px; bottom: 36px;">Booked
+                Data</button></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-light pt-4 mt-5" style="background-color: rgb(69, 69, 69);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>Flavor Junction is dedicated to providing an unforgettable dining experience with a variety of
+                        exquisite cuisines, prepared with the finest ingredients.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Address:</strong>123 Lorem Street, Ipsum, CA-12345</li>
+                        <li><strong>Phone:</strong>+91 123-456-7890</li>
+                        <li><strong>Email:</strong>flavorjunction5@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="shop.html" class="text-light">Shop</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                        <li><a href="bookTable.html" class="text-light">Book a Table</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Facebook"><i class="fa fa-facebook-f"
+                                style="font-size:25px"></i></a>
+                        <a href="https://twitter.com" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Twitter"><i class="fa fa-twitter" style="font-size:25px"></i></a>
+                        <a href="https://www.instagram.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Instagram"><i class="fa fa-instagram"
+                                style="font-size:25px"></i></a>
+                        <a href="https://in.linkedin.com/" class="text-light me-2" target="_blank"
+                            title="Flavor Junction on Linkedin"><i class="fa fa-linkedin"
+                                style="font-size:25px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center pb-3">
+                <p>&copy; 2024 Flavor Junction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

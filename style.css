@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER SECTION */
+
+.slogan {
+    background-color: rgb(69, 69, 69);
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 14px;
+    position: relative;
+    top: 6px;
+    color: rgb(218, 157, 35);
+}
+
+.navbar-brand {
+    text-decoration: none;
+
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+
+.mycart {
+    position: relative;
+    right: 100px;
+    cursor: pointer;
+}
+
+.mycart button {
+    height: 40px;
+    width: 120px;
+    padding: auto;
+    background-color: rgb(218, 157, 35);
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.mycart button:hover {
+    color: rgb(230, 230, 230);
+    background-color: rgb(186, 135, 33);
+}
+
+.CartLink {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.bookTable {
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+}
+
+
+.bookTable button {
+    height: 40px;
+    width: 120px;
+    padding: auto;
+    background-color: rgb(218, 157, 35);
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.bookTable button:hover {
+    color: rgb(230, 230, 230);
+    background-color: rgb(186, 135, 33);
+}
+
+.bookLink {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+
+/* HEADER SECTION ENDS */
+
+/* WELCOME MESSAGE */
+
+.welcomeMessage {
+    text-align: center;
+    color: rgb(69, 69, 69);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    padding-top: 15px;
+    border-radius: 6px;
+    background-color: rgb(255, 245, 227);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    border: 1px dotted grey;
+}
+
+.welcomeMessage h3 {
+    font-weight: bolder;
+}
+
+.welcomeMessage p {
+    width: 90%;
+}
+
+/* WELCOME MESSSAGE ENDS */
+
+/* TEXT SLIDES */
+
+.textSlide {
+    border-radius: 6px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    color: rgb(69, 69, 69);
+    border: 1px dotted grey;
+}
+
+/* TEXT SLIDES ENDS */
+
+/* CALL TO ACTION */
+.call-section {
+    color: rgb(69, 69, 69);
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.call-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.call-section p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.call-buttons .btn-primary {
+    background-color: #DA9D23;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+}
+
+.call-buttons .btn-secondary {
+    background-color: #343a40;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+}
+
+.call-buttons .btn-primary:hover {
+    background-color: #c88e1f;
+}
+
+.call-buttons .btn-secondary:hover {
+    background-color: #23272b;
+}
+
+/* CALL TO ACTION ENDS */
+
+/* FEATURED DISHES */
+
+.Dcard-img-top {
+    height: 250px;
+}
+
+/* FEATURED DISHES ENDS */
