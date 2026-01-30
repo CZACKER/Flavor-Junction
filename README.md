@@ -22,7 +22,7 @@ Below are some screenshots (click thumbnails to view full-size):
 </p>
 
 Want to see every screenshot? Browse the folder on GitHub:  
-https://github.com/<your-username>/Flavor-Junction/tree/main/Output_Images
+[https://github.com/<your-username>/Flavor-Junction/tree/main/Output_Images](https://github.com/CZACKER/Flavor-Junction/blob/main/Output_Images)
 
 ## Database
 Database schema: [flavor_junction_schema.sql](flavor_junction_schema.sql)
